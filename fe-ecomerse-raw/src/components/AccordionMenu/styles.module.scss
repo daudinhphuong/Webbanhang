@@ -1,0 +1,37 @@
+@import '@styles/variable.module.scss';
+@import '@styles/mixin.module.scss';
+
+.container {
+    .title {
+        @include flex_box_custom(flex-start, center, 10px);
+
+        padding: 9px 15px;
+        color: #404040;
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+            color: #7c7c7c;
+        }
+    }
+
+    .activeTitle {
+        background-color: #f7f7f7;
+    }
+
+    .contentMenu {
+        height: 0px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        padding: 0px 20px;
+    }
+
+    .isVisibility {
+        height: auto;
+        padding: 20px;
+    }
+
+    .borderBottom {
+        border-bottom: 1px solid #e1e1e1;
+    }
+}

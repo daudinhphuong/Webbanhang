@@ -1,0 +1,39 @@
+@import '@styles/variable.module.scss';
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .labelCLS {
+    font-size: 14px;
+    color: $thr_color;
+    margin-bottom: 5px;
+  }
+
+  .error {
+    border-color: red !important;
+  }
+
+  input {
+    height: 37px;
+    padding: 0px 15px;
+    border: 1px solid #e1e1e1;
+
+    &:focus {
+      outline: #333;
+      border: 1px solid #333;
+    }
+  }
+
+  select {
+    height: 37px;
+    padding: 0px 15px;
+    border: 1px solid #e1e1e1;
+
+    &:focus {
+      outline: #333;
+      border: 1px solid #333;
+    }
+  }
+}
